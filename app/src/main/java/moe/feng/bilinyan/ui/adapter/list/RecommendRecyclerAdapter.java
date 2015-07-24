@@ -1,19 +1,18 @@
 package moe.feng.bilinyan.ui.adapter.list;
 
 import android.net.Uri;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 import moe.feng.bilinyan.R;
-import moe.feng.bilinyan.model.RecommendList;
 import moe.feng.bilinyan.model.VideoItemInfo;
 import moe.feng.bilinyan.ui.common.AbsRecyclerViewAdapter;
 
@@ -60,7 +59,7 @@ public class RecommendRecyclerAdapter extends AbsRecyclerViewAdapter {
 	public class CardHolder extends ClickableViewHolder {
 
 		public ImageView mPreviewImage;
-		public TextView mTitleView;
+		public AppCompatTextView mTitleView;
 
 		public CardHolder(View itemView) {
 			super(itemView);

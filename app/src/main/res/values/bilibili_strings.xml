@@ -2,6 +2,8 @@
 <resources>
 
 	<string name="home_tab_recommend_title">Recommended videos</string>
+	<string name="home_tab_recent_bangumi">Latest bangumi</string>
+	<string name="home_tab_more">More</string>
 
 	<string name="section_recommend">Recommend</string>
 	<string name="section_anime">Anime</string>
@@ -14,5 +16,25 @@
 	<string name="section_funny">Funny</string>
 	<string name="section_movie">Movies</string>
 	<string name="section_tv_series">TV series</string>
+
+	<string name="weekday_sun">SUN.</string>
+	<string name="weekday_mon">MON.</string>
+	<string name="weekday_tue">TUE.</string>
+	<string name="weekday_wed">WED.</string>
+	<string name="weekday_thu">THU.</string>
+	<string name="weekday_fri">FRI.</string>
+	<string name="weekday_sat">SAT.</string>
+
+	<string name="weekday_update">Every %s Update</string>
+	
+	<string-array name="weekdays">
+		<item>@string/weekday_sun</item>
+		<item>@string/weekday_mon</item>
+		<item>@string/weekday_tue</item>
+		<item>@string/weekday_wed</item>
+		<item>@string/weekday_thu</item>
+		<item>@string/weekday_fri</item>
+		<item>@string/weekday_sat</item>
+	</string-array>
 
 </resources>
