@@ -95,6 +95,25 @@ public class ApiHelper {
 		return builder.toString();
 	}
 
+	public static String getSpUrl(int spid, String name) {
+		UrlBuilder builder = new UrlBuilder(API_HOST + "/" + ApiUrl.SP);
+
+		if (spid != -1) builder.addParams("spid", spid);
+		if (name != null) builder.addParams("title", name);
+
+		return builder.toString();
+	}
+
+	public static String getSpItemUrl(int spid, int season_id, int bangumi) {
+		UrlBuilder builder = new UrlBuilder(API_HOST + "/" + ApiUrl.SP_VIEW);
+
+		if (spid != -1) builder.addParams("spid", spid);
+		if (season_id != -1) builder.addParams("season_id", season_id);
+		if (bangumi != -1) builder.addParams("bangumi", bangumi);
+
+		return builder.toString();
+	}
+
 	private static void addAPIParmasAndComplete(UrlBuilder builder) {
 		builder.addParams("appkey", Secret.APP_KEY);
 		builder.addParams("ts", Long.toString(System.currentTimeMillis() / 1000));
@@ -110,6 +129,8 @@ public class ApiHelper {
 		static final String LIST = "list";
 		static final String INDEX = "index";
 		static final String BANGUMI = "bangumi";
+		static final String SP = "sp";
+		static final String SP_VIEW = "spview";
 
 		static final String SLIDESHOW = "index/slideshow.json";
 

@@ -79,4 +79,7 @@
 	<dimen name="user_info_details_number_bar_height">48dp</dimen>
 	<dimen name="user_info_details_number_padding">12dp</dimen>
 
+	<!-- activity_sp_view.xml -->
+	<dimen name="sp_preview_padding">16dp</dimen>
+
 </resources>
